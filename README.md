@@ -1,1 +1,2 @@
-# cntric-fauan-toolkit
+# cntric-fauna-toolkit
+A toolkit for Fauna.
