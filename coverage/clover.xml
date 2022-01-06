@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1641432568504" clover="3.2.0">
+  <project timestamp="1641432568505" name="All files">
+    <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2" elements="11" coveredelements="11" complexity="0" loc="9" ncloc="9" packages="1" files="1" classes="1"/>
+    <file name="shift.ts" path="/Users/lmonninger/Desktop/cntric-fauna-toolkit/src/bit/shift.ts">
+      <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="7" count="1" type="stmt"/>
+      <line num="16" count="1" type="stmt"/>
+      <line num="17" count="200" type="stmt"/>
+      <line num="57" count="1" type="stmt"/>
+      <line num="58" count="100" type="stmt"/>
+    </file>
+  </project>
+</coverage>
