@@ -1,7 +1,6 @@
 import { FaunaTestDb } from "fauna-test-setup";
 import { Bit32ShiftLeft, Bit32ShiftRight } from "./shift";
-const MAX_SAFE_INTEGER = 9007199254740991;
-export const RaiseSuiteA = () => {
+export const ShiftSuiteA = () => {
     describe("Shift basic functionality", () => {
         let db;
         beforeAll(async () => {
@@ -25,4 +24,4 @@ export const RaiseSuiteA = () => {
         });
     });
 };
-RaiseSuiteA();
+ShiftSuiteA();

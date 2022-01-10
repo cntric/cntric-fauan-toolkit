@@ -1,50 +1,19 @@
 import {query as q} from "faunadb";
 
-export const BIT_32_MASK = 0xff;
-export const FIRST_OCTET_MASK = 0xff;
-export const SECOND_OCTET_MASK = 0xff00;
-export const THIRD_OCTET_MASK = 0xff0000;
-export const FOURTH_OCTET_MASK = 0xff000000;
-
+export const BIT_32_MASK = 0xffffffff;
 
 /**
- * Performs a left bit shift on a given number.
+ * Performs 32 bit left shift on a single number.
  * @param a 
  * @param b 
  * @returns 
  */
 export const Bit32ShiftLeft = (a : number, b : number)=>{
-    return q.Sum(
-      [
-        q.BitAnd(
-            FIRST_OCTET_MASK,
-            q.Multiply(
-                a,
-                q.Pow(2, b)
-            )
-        ),
-        q.BitAnd(
-            SECOND_OCTET_MASK,
-            q.Multiply(
-                a,
-                q.Pow(2, b)
-            )
-        ),
-        q.BitAnd(
-            THIRD_OCTET_MASK,
-            q.Multiply(
-                a,
-                q.Pow(2, b)
-            )
-        ),
-        q.BitAnd(
-            FOURTH_OCTET_MASK,
-            q.Multiply(
-                a,
-                q.Pow(2, b)
-            )
+    return q.BitAnd(
+        q.Multiply(
+            a,
+            q.Pow(2, b)
         )
-      ]
     )
 }
 
@@ -55,5 +24,5 @@ export const Bit32ShiftLeft = (a : number, b : number)=>{
  * @returns 
  */
  export const Bit32ShiftRight = (a : number, b : number)=>{
-    return Bit32ShiftLeft(a, -b);
+    return q.Floor(Bit32ShiftLeft(a, -b));
 }

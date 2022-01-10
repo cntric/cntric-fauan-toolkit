@@ -1,10 +1,6 @@
-export declare const BIT_32_MASK = 255;
-export declare const FIRST_OCTET_MASK = 255;
-export declare const SECOND_OCTET_MASK = 65280;
-export declare const THIRD_OCTET_MASK = 16711680;
-export declare const FOURTH_OCTET_MASK = 4278190080;
+export declare const BIT_32_MASK = 4294967295;
 /**
- * Performs a left bit shift on a given number.
+ * Performs 32 bit left shift on a single number.
  * @param a
  * @param b
  * @returns

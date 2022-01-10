@@ -41,6 +41,9 @@
     "typescript": "^4.4.2"
   },
   "dependencies": {
-    "faunadb": "^4.4.1"
+    "@types/jsum": "^0.1.0",
+    "await-to-js": "^3.0.0",
+    "faunadb": "^4.4.1",
+    "jsum": "^2.0.0-alpha.3"
   }
 }

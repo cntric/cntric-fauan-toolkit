@@ -1,18 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1641432568504" clover="3.2.0">
-  <project timestamp="1641432568505" name="All files">
-    <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2" elements="11" coveredelements="11" complexity="0" loc="9" ncloc="9" packages="1" files="1" classes="1"/>
-    <file name="shift.ts" path="/Users/lmonninger/Desktop/cntric-fauna-toolkit/src/bit/shift.ts">
-      <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-      <line num="3" count="1" type="stmt"/>
-      <line num="4" count="1" type="stmt"/>
-      <line num="5" count="1" type="stmt"/>
-      <line num="6" count="1" type="stmt"/>
-      <line num="7" count="1" type="stmt"/>
-      <line num="16" count="1" type="stmt"/>
-      <line num="17" count="200" type="stmt"/>
-      <line num="57" count="1" type="stmt"/>
-      <line num="58" count="100" type="stmt"/>
-    </file>
+<coverage generated="1641854094178" clover="3.2.0">
+  <project timestamp="1641854094178" name="All files">
+    <metrics statements="52" coveredstatements="50" conditionals="2" coveredconditionals="0" methods="27" coveredmethods="16" elements="81" coveredelements="66" complexity="0" loc="52" ncloc="52" packages="4" files="7" classes="7"/>
+    <package name="bit">
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="index.ts" path="/Users/lmonninger/Desktop/cntric-fauna-toolkit/src/bit/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="shift.ts" path="/Users/lmonninger/Desktop/cntric-fauna-toolkit/src/bit/shift.ts">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="12" count="264" type="stmt"/>
+        <line num="26" count="3" type="stmt"/>
+        <line num="27" count="128" type="stmt"/>
+      </file>
+    </package>
+    <package name="collection">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="collection.ts" path="/Users/lmonninger/Desktop/cntric-fauna-toolkit/src/collection/collection.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="meta">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="index.ts" path="/Users/lmonninger/Desktop/cntric-fauna-toolkit/src/meta/index.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="naming.ts" path="/Users/lmonninger/Desktop/cntric-fauna-toolkit/src/meta/naming.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="random">
+      <metrics statements="44" coveredstatements="42" conditionals="2" coveredconditionals="0" methods="23" coveredmethods="12"/>
+      <file name="isaac.ts" path="/Users/lmonninger/Desktop/cntric-fauna-toolkit/src/random/isaac.ts">
+        <metrics statements="42" coveredstatements="40" conditionals="2" coveredconditionals="0" methods="22" coveredmethods="11"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="29" count="2" type="stmt"/>
+        <line num="30" count="4" type="stmt"/>
+        <line num="66" count="2" type="stmt"/>
+        <line num="67" count="4" type="stmt"/>
+        <line num="102" count="2" type="stmt"/>
+        <line num="103" count="4" type="stmt"/>
+        <line num="138" count="2" type="stmt"/>
+        <line num="139" count="4" type="stmt"/>
+        <line num="174" count="2" type="stmt"/>
+        <line num="175" count="4" type="stmt"/>
+        <line num="209" count="2" type="stmt"/>
+        <line num="210" count="4" type="stmt"/>
+        <line num="244" count="2" type="stmt"/>
+        <line num="245" count="4" type="stmt"/>
+        <line num="280" count="2" type="stmt"/>
+        <line num="281" count="4" type="stmt"/>
+        <line num="316" count="2" type="stmt"/>
+        <line num="317" count="4" type="stmt"/>
+        <line num="338" count="2" type="cond" truecount="0" falsecount="1"/>
+        <line num="339" count="4" type="stmt"/>
+        <line num="349" count="2" type="stmt"/>
+        <line num="355" count="2" type="stmt"/>
+        <line num="356" count="2" type="stmt"/>
+        <line num="381" count="2" type="stmt"/>
+        <line num="385" count="2" type="cond" truecount="0" falsecount="1"/>
+        <line num="386" count="0" type="stmt"/>
+        <line num="392" count="2" type="stmt"/>
+        <line num="393" count="0" type="stmt"/>
+      </file>
+      <file name="seed.ts" path="/Users/lmonninger/Desktop/cntric-fauna-toolkit/src/random/seed.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="100" type="stmt"/>
+      </file>
+    </package>
   </project>
 </coverage>

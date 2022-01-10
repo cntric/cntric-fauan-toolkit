@@ -1,9 +1,9 @@
 import { FaunaTestDb, FaunaTestDbI, teardown } from "fauna-test-setup";
 import { Bit32ShiftLeft, Bit32ShiftRight } from "./shift";
 import {query as q} from "faunadb";
-const MAX_SAFE_INTEGER = 9007199254740991;
+import { performance } from "perf_hooks";
 
-export const RaiseSuiteA = ()=>{
+export const ShiftSuiteA = ()=>{
 
 
     describe("Shift basic functionality", ()=>{
@@ -25,7 +25,7 @@ export const RaiseSuiteA = ()=>{
 
         });
 
-        test("Right shifts", async ()=>{
+        test("Right shifts", async ()=>{   
 
             for(let i = 0; i < 100; ++i){
                 const a = Math.floor(Math.random() * 16);
@@ -39,4 +39,4 @@ export const RaiseSuiteA = ()=>{
     })
 
 
-}; RaiseSuiteA();
+}; ShiftSuiteA();
